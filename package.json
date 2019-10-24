@@ -2,7 +2,7 @@
   "name": "d-and-d-web",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://brunojppb.github.io/d-and-d-web",
+  "homepage": "https://brunojppb.github.io/d-and-d-web",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",

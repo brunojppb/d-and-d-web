@@ -1,7 +1,7 @@
 import React from 'react';
-import PlayersContainer from './components/PlayersContainer';
-import enemy from './img/enemy.jpg';
 import './App.scss';
+import PlayersContainer from './components/PlayersContainer';
+import EnemiesContainer from './components/EnemiesContainer';
 
 const App =  () => {
   return (
@@ -13,11 +13,7 @@ const App =  () => {
         <PlayersContainer/>
       </div>
       <div className="clip-to-bounds-container">
-        <div className="enemies">
-          <button className="add-enemy-btn">
-            Add Enemy
-          </button>
-        </div>
+        <EnemiesContainer/>
       </div>
     </div>
   );
