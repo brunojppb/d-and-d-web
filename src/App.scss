@@ -1,0 +1,151 @@
+.App {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+
+  .btn {
+    border: 1px solid #222;
+    font-weight: bold;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #222;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 15px;
+  }
+
+  .shadow-around {
+    border: 2px solid #efefef;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.22) 0 0 16px 1px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 3px 1px;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid #222;
+    }
+    
+    &:before, &:after {
+      position: absolute;
+      content: ' ';
+      height: 15px;
+      width: 3px;
+      background-color: #333;
+    }
+    &:after {
+      top: 12px;
+    }
+  }
+
+  .arrow-left {
+    left: 16px;
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .arrow-right {
+    right: 16px;
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  .clip-to-bounds-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hp-bar-container {
+    position: absolute;
+    top: -35px;
+    left: 0px;
+    width: 100%;
+    .hp-bar {
+      height: 24px;
+      width: 100%;
+      border: 1px solid #222;
+      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    
+      & > span {
+        display: block;
+        height: 100%;
+        background-color: green;
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+      }
+      & > div {
+        font-weight: bold;
+        color: #222;
+      }
+    }
+  }
+
+  .players, .enemies {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 32px;
+    align-items: center;
+    overflow: scroll;
+    height: 100%;
+  }
+
+  .player {
+    position: relative;
+    text-align: center;
+    min-width: 120px;
+    max-width: 140px;
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+    h4 {
+      margin: 0;
+    }
+    
+    padding: 16px;
+    img {
+      width: 100%;
+    }
+
+    &:first-child {
+      .arrow-left {
+        display: none;
+      }
+    }
+    
+    &:last-child {
+      .arrow-right {
+        display: none;
+      }
+    }
+
+  }
+
+  .enemies {
+    position: relative;
+    .add-enemy-btn {
+      right: 8px;
+      bottom: 50px;
+      position: absolute;
+      border: 1px solid #222;
+      padding: 8px;
+    }
+  }
+
+}
