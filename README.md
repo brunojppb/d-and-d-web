@@ -1,4 +1,5 @@
 # Dungeon and Dragons Web For Friends :)
+![workflow-badge](https://github.com/brunojppb/d-and-d-web/workflows/deploy/badge.svg)  
 
 ![app](https://i.imgur.com/k2NWs5O.gif)
 

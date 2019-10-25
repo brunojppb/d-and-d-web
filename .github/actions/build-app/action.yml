@@ -1,0 +1,6 @@
+name: 'Deploy new version'
+description: 'Setup Node env and deploy new app version'
+author: 'Bruno Paulino'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
