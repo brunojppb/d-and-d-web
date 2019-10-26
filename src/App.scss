@@ -123,7 +123,7 @@
     height: 100%;
   }
 
-  .player {
+  .player, .enemy {
     position: relative;
     text-align: center;
     min-width: 120px;
@@ -160,8 +160,48 @@
       right: 8px;
       bottom: 50px;
       position: absolute;
-      border: 1px solid #222;
+      background-color: #222;
+      color: white;
+      font-weight: bold;
       padding: 8px;
+      text-decoration: none;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    .add-enemy-list-container {
+      width: 100%;
+      max-width: 400px;
+      background-color: white;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 8px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          font-weight: bold;
+          padding: 16px;
+          border-bottom: 1px solid lightgray;
+          &:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 

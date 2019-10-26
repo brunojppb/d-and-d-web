@@ -40,7 +40,7 @@ const Player = ({name, img, hp, hitsTaken, actions}) => {
           { isChangingHp ? _renderHpInput() : _renderHpBar() }
         </div>
         <h4>{name}</h4>
-        <img src={img}/>
+        <img src={img} alt={name}/>
         <div className="player-actions-container">
           <button className="btn btn-red btn-round" onClick={() => actions.incrementHp(name)}>❤️+</button>
           <button className="btn btn-red btn-round" onClick={() => actions.decrementHp(name)}>❤️-</button>
