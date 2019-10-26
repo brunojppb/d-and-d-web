@@ -154,6 +154,16 @@
 
   }
 
+  .enemy {
+    .hits-taken {
+      font-weight: bold;
+      margin: 4px 0;
+      span {
+        color: red;
+      }
+    }
+  }
+
   .enemies {
     position: relative;
     .add-enemy-btn {

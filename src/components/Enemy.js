@@ -10,8 +10,8 @@ const Enemy = ({name, img, hitsTaken, isDead, actions}) => {
             <h4>{name}</h4>
             <img src={img} alt={name}>
             </img>
-            <div>
-                Hits Taken: {hitsTaken}
+            <div class="hits-taken">
+                Hits Taken: <span>{hitsTaken}</span>
             </div>
             <button className="btn btn-round" onClick={() => actions.inflictDamage(name)}>
                 ⚔️ +
