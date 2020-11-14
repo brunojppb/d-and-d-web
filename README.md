@@ -1,5 +1,7 @@
-# Dungeon and Dragons Web For Friends :)
+# Dungeon and Dragons Web with Friends
 ![workflow-badge](https://github.com/brunojppb/d-and-d-web/workflows/deploy/badge.svg)  
+
+Just a simple Web UI written in React to play D&D with my friends durring the weekend. Nothing fency.
 
 ![app](https://i.imgur.com/OtA7rGg.gif)
 
